@@ -8,3 +8,7 @@ void main()
     c=a+b;
     printf("Sum:%d",c);
 }
+
+/*
+    int main()
+*/
