@@ -2,13 +2,20 @@
 # Compiler-Design-Lab
 This repository contains a collection of programs written as part of Compiler Design Lab
 
-1. [Lexical Analyser using C](./Lexical-Analyser-Using-C)
-2. [Lexical Analyser using Lex](./Lexical-Analyser-Using-Lex)
-3. [Recursive Descent Parser using C](./Recursive-Descent-Parser)
-4. [Intermediate Code Generation using C](./Intermediate-Code-Generator)
-5. Lex Programs:
-    - [Email And Phone Validator](./Lex-Programs/Email-And-Phone)
-    - [Vowels And Consonants Counter](./Lex-Programs/Vowels-And-Consonants)
-    - [Palindrome Checker](./Lex-Programs/Palindrome)
-6. Yacc Programs:
-    - [Calculator](./Yacc-Programs/Calculator)
+<ol>
+    <li><a href="./Lexical-Analyser-Using-Lex">Lexical Analyser using Lex</a></li>
+    <li><a href="./Recursive-Descent-Parser">Recursive Descent Parser using C</a></li>
+    <li><a href="./Intermediate-Code-Generator">Intermediate Code Generation using C</a></li>
+    <li>Lex Programs:
+        <ul>
+            <li><a href="./Lex-Programs/Email-And-Phone">Email And Phone Validator</a></li>
+            <li><a href="./Lex-Programs/Vowels-And-Consonants">Vowels And Consonants Counter</a></li>
+            <li><a href="./Lex-Programs/Palindrome">Palindrome Checker</a></li>
+        </ul>
+    </li>
+    <li>Yacc Programs:
+        <ul>
+            <li><a href="./Yacc-Programs/Calculator">Calculator</a></li>
+        </ul>
+    </li>
+</ol>
