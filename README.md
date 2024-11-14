@@ -4,8 +4,9 @@ This repository contains a collection of programs written as part of Compiler De
 
 <ol>
     <li><a href="./Lexical-Analyser-Using-Lex">Lexical Analyser using Lex</a></li>
-    <li><a href="./Recursive-Descent-Parser">Recursive Descent Parser using C</a></li>
-    <li><a href="./Intermediate-Code-Generator">Intermediate Code Generation using C</a></li>
+    <li><a href="./Recursive-Descent-Parser">Recursive Descent Parser</a></li>
+    <li><a href="./Shift-Reduce-Parser">Shift Reduce Parser</a></li>
+    <li><a href="./Intermediate-Code-Generator">Intermediate Code Generation</a></li>
     <li>Lex Programs:
         <ul>
             <li><a href="./Lex-Programs/Email-And-Phone">Email And Phone Validator</a></li>
