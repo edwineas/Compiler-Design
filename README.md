@@ -7,6 +7,7 @@ This repository contains a collection of programs written as part of Compiler De
     <li><a href="./Recursive-Descent-Parser">Recursive Descent Parser</a></li>
     <li><a href="./Shift-Reduce-Parser">Shift Reduce Parser</a></li>
     <li><a href="./Intermediate-Code-Generator">Intermediate Code Generation</a></li>
+    <li><a href="./Constant-Propagation">Constant Propagation</a></li>
     <li>Lex Programs:
         <ul>
             <li><a href="./Lex-Programs/Email-And-Phone">Email And Phone Validator</a></li>
