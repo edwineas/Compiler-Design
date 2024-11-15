@@ -3,6 +3,7 @@
 This repository contains a collection of programs written as part of Compiler Design Lab
 
 <ol>
+    <li><a href="./Lexical-Analyser-Using-C">Lexical Analyser using C</a></li>
     <li><a href="./Lexical-Analyser-Using-Lex">Lexical Analyser using Lex</a></li>
     <li><a href="./Recursive-Descent-Parser">Recursive Descent Parser</a></li>
     <li><a href="./Shift-Reduce-Parser">Shift Reduce Parser</a></li>
