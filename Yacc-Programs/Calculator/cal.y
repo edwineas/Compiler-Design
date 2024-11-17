@@ -14,19 +14,19 @@ void yyerror(const char *s);
 
 %%
 
-input: expr {
+input: E {
     printf("\nResult=%d\n", $1);
     return 0;
 };
 
-expr: 
-    expr '+' expr   { $$ = $1 + $3; }
-   |expr '-' expr   { $$ = $1 - $3; }
-   |expr '*' expr   { $$ = $1 * $3; }
-   |expr '/' expr   { $$ = $1 / $3; }
-   |expr '%' expr   { $$ = $1 % $3; }
-   |'(' expr ')'    { $$ = $2; }
-   |NUMBER          { $$ = $1; }
+E: 
+    E '+' E { $$ = $1 + $3; }
+   |E '-' E { $$ = $1 - $3; }
+   |E '*' E { $$ = $1 * $3; }
+   |E '/' E { $$ = $1 / $3; }
+   |E '%' E { $$ = $1 % $3; }
+   |'(' E ')' { $$ = $2; }
+   |NUMBER { $$ = $1; }
 ;
 
 %%
