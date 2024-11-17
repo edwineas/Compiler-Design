@@ -1,35 +1,43 @@
-%token NUMBER // Define token NUMBER
+%{
+#include <stdio.h>
+#include <stdlib.h>
 
-%left '+' '-' 
-%left '*' '/' '%' 
-%left '(' ')'
+int yylex(void);
+void yyerror(const char *s);
+%}
+
+%token NUMBER
+
+%left '+' '-'    /* lowest precedence */
+%left '*' '/' '%'  /* higher precedence */
+%left '(' ')'    /* highest precedence */
 
 %%
 
-input: E{
-    printf("\nResult=%d\n",$1);
+input: expr {
+    printf("\nResult=%d\n", $1);
     return 0;
 };
 
-// Define the grammar rules
-E:E'+'E {$$=$1+$3;}
- |E'-'E {$$=$1-$3;}
- |E'*'E {$$=$1*$3;}
- |E'/'E {$$=$1/$3;}
- |E'%'E {$$=$1%$3;}
- |'('E')' {$$=$2;}
- | NUMBER {$$=$1;}
+expr: 
+    expr '+' expr   { $$ = $1 + $3; }
+   |expr '-' expr   { $$ = $1 - $3; }
+   |expr '*' expr   { $$ = $1 * $3; }
+   |expr '/' expr   { $$ = $1 / $3; }
+   |expr '%' expr   { $$ = $1 % $3; }
+   |'(' expr ')'    { $$ = $2; }
+   |NUMBER          { $$ = $1; }
 ;
 
 %%
 
-void main()
+int main()
 {
     printf("\nEnter Any Arithmetic Expression: ");
     return yyparse(); 
 }
 
-void yyerror()
+void yyerror(const char *s)
 {
-    printf("\nEntered arithmetic expression is Invalid\n\n");
+    printf("\nEntered arithmetic expression is Invalid: %s\n\n", s);
 }
